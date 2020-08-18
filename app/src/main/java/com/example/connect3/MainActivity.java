@@ -102,17 +102,20 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout firstRow = (LinearLayout) findViewById(R.id.row1Layout);
         for(int i = 0; i < firstRow.getChildCount(); i++){
-            ((ImageView) firstRow.getChildAt(i)).setImageResource(0);
+            ((ImageView) firstRow.getChildAt(i)).setImageResource(R.drawable.red);
+            ((ImageView) firstRow.getChildAt(i)).setAlpha(0f);
         }
 
         LinearLayout secondRow = (LinearLayout) findViewById(R.id.row2Layout);
         for(int i = 0; i < secondRow.getChildCount(); i++){
             ((ImageView) secondRow.getChildAt(i)).setImageResource(0);
+            ((ImageView) secondRow.getChildAt(i)).setAlpha(0f);
         }
 
         LinearLayout thirdRow = (LinearLayout) findViewById(R.id.row3Layout);
         for(int i = 0; i < thirdRow.getChildCount(); i++){
             ((ImageView) thirdRow.getChildAt(i)).setImageResource(0);
+            ((ImageView) thirdRow.getChildAt(i)).setAlpha(0f);
         }
     }
 
